@@ -19,6 +19,4 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag agent-orchestration:$(date +%s)
       - name: Push to Dockerhub
-        env:
-          DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
-        run: docker push $DOCKER_USERNAME/agent-orchestration:latest
+        run: docker push sakethrambilla/agent-orchestration:latest
