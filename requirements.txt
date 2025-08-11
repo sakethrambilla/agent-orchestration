@@ -1,0 +1,5 @@
+langgraph
+fastapi[standard]
+uvicorn
+python-dotenv
+websockets
